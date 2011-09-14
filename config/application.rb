@@ -39,13 +39,7 @@ module Holla2
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password, :password_confirmation]
-    
-    require "rack/sprockets"
-    config.middleware.use "Rack::Sprockets", :load_path => ["app/javascripts/", "app/javascripts/lib/"]
-    
-    require "rack/less"
-    config.middleware.use "Rack::Less"
-        
+
     config.active_record.include_root_in_json = false
     SuperModel::Base.include_root_in_json     = false    
   end

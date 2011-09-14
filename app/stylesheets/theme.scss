@@ -1,5 +1,3 @@
-@import "utils";
-
 body {
   background: #D2D2D2;
   color: #363636;
@@ -37,20 +35,20 @@ h3 {
 h4 {
   font-size: 12pt;
   color: #7E7F7E;
-} 
+}
 
 p {
   color: #7E7F7E;
   font-size: 10pt;
   padding: 5px;
-} 
+}
 
 a {
   color: #363636;
   cursor: pointer;
   text-decoration: underline;
-  
-  :hover {
+
+ &:hover {
     text-decoration: underline;
   }
 }
@@ -64,7 +62,6 @@ hr {
   border: 0;
   border-bottom: 1px solid #CDCDCC;
 
-  .box-shadow(0, 1px, 1px, #FCFCFC);
 }
 
 header {
@@ -75,46 +72,39 @@ header {
   padding: 3px 7px;
   color: #FFF;
   font-weight: bold;
-  
-  border: 2px solid #FFF;  
-  .border-radius(30px);
-  
-  .box-shadow(0, 0, 2px, #7F7F7F);
+
+  border: 2px solid #FFF;
+
   text-shadow: 0 -1px 1px #7F7F7F;
-  
-  .vbg-gradient(#58A7D5, #3995CC);
+
   background: -webkit-gradient(linear, left top, left bottom, from(#58A7D5), color-stop(0.5, #58A7D5), color-stop(0.5, #3995CC), to(#3995CC));
 }
 
 .panel {
-  border-style: solid;  
+  border-style: solid;
   border-width: 1px 0;
   border-top-color: #CBCBCB;
   border-bottom-color: #D7D7D7;
 
-  .vbg-gradient(#FFF, #E0E0E1);  
 }
 
 .innerPanel {
   padding: 5px;
   background: #F2F2F2;
   border: 1px solid #EDEDED;
-  
-  .border-radius(5px);
+
 }
 
 .popup {
   background: #F1F2F2;
   border: 1px solid #FFF;
-  
-  .box-shadow(0, 10px, 10px, #E3E3E3);
+
 }
 
 .popup h2 {
   display: block;
   padding: 4px;
-  
-  .vbg-gradient(#575859, #272425);
+
 }
 
 button {
@@ -129,24 +119,16 @@ button {
   margin: 1px 1px 1px 0;
   outline: none;
 
-  .vbg-gradient(#F9F9F9, #E3E3E3);
-  .border-radius(3px);
-  .box-shadow(0, 1px, 1px, #FFF);
-  
-  :active {
-    .vbg-gradient(#E3E3E3, #F9F9F9);
+
+ &:active {
   }
 }
 
-button.default, .ui-dialog-buttonset button:first-child {
   color: #FFF;
   border: 1px solid #3F68A5;
-  
+
   text-shadow: 0 -1px 1px #46677F;
-  .vbg-gradient(#7BB5DB, #4775B8);
-  
-  :active, .active {
-    .vbg-gradient(#4775B8, #7BB5DB);
+
   }
 }
 
@@ -155,30 +137,23 @@ button.pill {
   text-align: center;
 
   border: 1px solid #B1B1B1;
-  
-  .box-shadow(0, 1px, 1px, #FFF);
-  .vbg-gradient(#F9F9FA, #CFD1D3);
-  .border-radius(18px);
+
 }
 
 button.pill:active, button.pill.active {
-  .vbg-gradient(#D4D6D7, #F9F9FA);
 }
 
-button.pill.default {  
+button.pill.default {
   border: 1px solid #325170;
   color: #FFF;
   text-shadow: 0 1px 1px #375167;
-  
-  .vbg-gradient(#78B1D9, #4978B9);
-  
-  :active, .active {
-    .vbg-gradient(#4978B9, #78B1D9);
+
+
   }
 }
 
-textarea, 
-input[type="text"], 
+textarea,
+input[type="text"],
 input[type="password"] {
   border: 1px solid #9E9FA2;
   color: #363636;
@@ -186,14 +161,11 @@ input[type="password"] {
   font-size: 17px;
   outline: none;
   padding: 10px;
-  
-  .border-radius(20px);
-  .vbg-gradient(#E6E6E7, #FAFAFA);  
-  background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E7), color-stop(0.3, #FAFAFA), to(#FAFAFA));  
+
+  background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E7), color-stop(0.3, #FAFAFA), to(#FAFAFA));
 }
 
 textarea {
-  .border-radius(10px);
   height: 70px;
 }
 
@@ -207,16 +179,16 @@ input.plain {
 label {
   display: block;
   margin: 0 0 20px 0;
-  overflow: visible;  
+  overflow: visible;
 }
 
 label span {
   display: block;
   margin-bottom: 6px;
   margin-left: -3px;
-  
+
   font-weight: bold;
-  font-size: 13px; 
+  font-size: 13px;
 }
 
 label input {
@@ -237,10 +209,9 @@ label input[type="checkbox"] + span {
 label input[type="text"],
 label input[type="password"],
 textarea {
-  width: 220px;  
+  width: 220px;
   margin: 0 2px 0 0;
   padding: 4px 8px;
-  .border-box();  
 }
 
 input.dark {
@@ -252,8 +223,7 @@ input.dark {
   outline: none;
   color: #FFF;
   height: 20px;
-  
-  .border-radius(15px);
+
 }
 
 form.piece label {
@@ -261,8 +231,7 @@ form.piece label {
   margin: 0px 0px 10px;
   overflow: hidden;
   border-bottom: 1px solid #CDCDCC;
-  
-  .box-shadow(0, 1px, 1px, #FCFCFC);
+
 }
 
 form.piece label span {
@@ -287,11 +256,11 @@ textarea {
 table {
   overflow: visible;
   border-collapse: collapse;
-  
+
   tr {
     border-bottom: 1px solid #CDCDCC;
   }
-  
+
   tr td {
     padding: 10px;
   }
@@ -304,44 +273,35 @@ pre {
 .ui-dialog {
   padding: 0;
 
-  .border-radius(10px);
-  .vbg-gradient(#FFF, #E0E0E1);
-  
+
   -webkit-box-shadow: inset 0 -1px 1px #FFF, 0px 5px 20px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0 -1px 1px #FFF, 0px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-.ui-dialog .ui-dialog-titlebar {
   height: 25px;
   line-height: 25px;
   overflow: hidden;
   text-align: center;
   color: #FFF;
   border-bottom: 1px solid #535353;
-  
-  .vbg-gradient(#575859, #272425);
+
 
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
 }
 
-.ui-dialog .ui-dialog-title {
   margin: 0;
 }
 
-.ui-dialog .ui-dialog-content {
   line-height: 1.3em;
   padding: 15px 10px 10px 15px;
 }
 
-.ui-dialog .ui-dialog-buttonpane {
   border-top: 1px solid #CDCDCC;
   padding: 9px 0;
   margin: 0 9px;
-  
-  .inset-box-shadow(0, 1px, 1px, #FCFCFC);
+
 }
 
-.ui-dialog .ui-dialog-buttonpane button {
   margin: 0 3px 0 3px;
 }
