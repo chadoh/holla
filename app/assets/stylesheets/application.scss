@@ -1,5 +1,7 @@
-@import "jquery.ui.css";
-@import "theme";
+/*
+ *= require_self
+ *= require_tree .
+ */
 
 .vdivide {
   width: 6px;
